@@ -19,7 +19,7 @@ for package in ['--upgrade pip', 'sklearn', 'pydrive', 'google', 'oauth2client',
 
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import *
+#from sklearn.preprocessing import *
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import *
