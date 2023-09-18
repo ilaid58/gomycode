@@ -12,7 +12,7 @@ Original file is located at
 import subprocess
 
 for package in ['pandas', 'numpy', 'scikit-learn', 'pydrive', 'google', 'oauth2client', 'streamlit']:
-    result = subprocess.check_call(["pip", "install", package], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+    result = subprocess.check_call(["pip", "install", package])
     if result.returncode!=0:
         print('installation failed for the package', package)
 
