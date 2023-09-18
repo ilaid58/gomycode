@@ -13,6 +13,8 @@ import subprocess
 
 for package in ['pandas', 'numpy', 'scikit-learn', 'pydrive', 'google', 'oauth2client', 'streamlit']:
     result = subprocess.run(["pip", "install", package], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+    if result.returncode!=0:
+        print('installation failed for the package', package)
 
 import pandas as pd
 import numpy as np
