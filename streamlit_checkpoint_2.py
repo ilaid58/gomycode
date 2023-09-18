@@ -16,7 +16,6 @@ import subprocess
         subprocess.check_call(["pip3.9", "install", package])
     except:
         print('installation failed for the package', package)'''
-import scikit_learn
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import *
