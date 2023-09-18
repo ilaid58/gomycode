@@ -12,8 +12,9 @@ Original file is located at
 import subprocess
 
 for package in ['pandas', 'numpy', 'scikit-learn', 'pydrive', 'google', 'oauth2client', 'streamlit']:
-    result = subprocess.check_call(["pip", "install", package])
-    if result.returncode!=0:
+    try:
+        subprocess.check_call(["pip", "install", package])
+    except:
         print('installation failed for the package', package)
 
 import pandas as pd
