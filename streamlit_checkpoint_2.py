@@ -9,12 +9,16 @@ Original file is located at
 
 
 """#**1. Install necessary package**"""
+import subprocess
 
-import streamlit as st
+for package in ['pandas', 'numpy', 'scikit-learn', 'pydrive', 'google', 'oauth2client', 'streamlit']:
+    try:
+        import pandas_profiling as pp
+    except:
+        result = subprocess.run(["pip", "install", package], tdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+
 import pandas as pd
 import numpy as np
-import pandas_profiling as pp
-
 from sklearn.preprocessing import *
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
