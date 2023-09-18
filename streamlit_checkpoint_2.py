@@ -11,7 +11,7 @@ Original file is located at
 """#**1. Install necessary package**"""
 import subprocess
 
-for package in ['pydrive', 'google', 'oauth2client', 'streamlit']:
+for package in ['--upgrade pip', 'scikit-learn', 'pydrive', 'google', 'oauth2client', 'streamlit']:
     try:
         subprocess.check_call(["pip", "install", package])
     except:
