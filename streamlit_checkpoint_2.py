@@ -13,7 +13,7 @@ import subprocess
 
 for package in ['--upgrade pip', 'scikit-learn', 'pydrive', 'google', 'oauth2client', 'streamlit']:
     try:
-        subprocess.check_call(["pip", "install", package])
+        subprocess.check_call(["pip3.9", "install", package])
     except:
         print('installation failed for the package', package)
 
