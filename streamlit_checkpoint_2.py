@@ -15,7 +15,7 @@ for package in ['pandas', 'numpy', 'scikit-learn', 'pydrive', 'google', 'oauth2c
     try:
         import pandas_profiling as pp
     except:
-        result = subprocess.run(["pip", "install", package], tdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+        result = subprocess.run(["pip", "install", package], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
 
 import pandas as pd
 import numpy as np
