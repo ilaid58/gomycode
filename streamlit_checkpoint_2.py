@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1MXi0guqVxV1vyPZlI-RJEdsZqZiktwrp
 """
 
-!pip install streamlit
-
-!pip install pandas-profiling
 
 """#**1. Install necessary package**"""
 
