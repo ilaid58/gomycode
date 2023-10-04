@@ -10,12 +10,12 @@ Original file is located at
 
 ## Download package
 """
-import os
+import pip
 
 #os.system('pip install streamlit')
 
-os.system('pip install SpeechRecognition')
-os.system('pip install nltk')
+pip.main(['install','SpeechRecognition'])
+pip.main(['install', 'nltk'])
 
 import nltk
 nltk.download('punkt')
