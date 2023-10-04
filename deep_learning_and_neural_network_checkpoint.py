@@ -12,7 +12,7 @@ Original file is located at
 """
 import os
 
-os.systen('pip install streamlit')
+os.system('pip install streamlit')
 
 os.system('pip install SpeechRecognition')
 
