@@ -13,7 +13,7 @@ Original file is located at
 import pip
 
 pip.main(['install','SpeechRecognition'])
-pip.main(['install', 'nltk', '--user'])
+pip.main(['install', 'nltk', '--adminuser'])
 import nltk
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
