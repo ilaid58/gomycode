@@ -14,7 +14,7 @@ import pip
 
 #os.system('pip install streamlit')
 
-pip.main(['install','SpeechRecognition'])
+#pip.main(['install','SpeechRecognition'])
 pip.main(['install', 'nltk'])
 
 import nltk
