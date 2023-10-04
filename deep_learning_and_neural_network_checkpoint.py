@@ -10,10 +10,11 @@ Original file is located at
 
 ## Download package
 """
+import os
 
-!pip install streamlit
+os.systen('pip install streamlit')
 
-!pip install SpeechRecognition
+os.system('pip install SpeechRecognition')
 
 import nltk
 import streamlit as st
