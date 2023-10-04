@@ -12,9 +12,7 @@ Original file is located at
 """
 import pip
 
-#os.system('pip install streamlit')
-
-#pip.main(['install','SpeechRecognition'])
+pip.main(['install','SpeechRecognition'])
 pip.main(['install', 'nltk'])
 
 import nltk
@@ -84,7 +82,9 @@ question = st.chat_input('enter your question')
 if st.button('ask'):
   question = question.title()
   answer = chatBot(question)
+  st.write(answer)
 
 if st.button('record'):
   question = speech_into_text()
   answer = chatBot(question)
+  st.write(answer)
