@@ -13,7 +13,7 @@ Original file is located at
 import pip
 
 pip.main(['install','SpeechRecognition'])
-pip.main(['install', 'nltk'])
+#pip.main(['install', 'nltk'])
 
 import nltk
 nltk.download('punkt')
