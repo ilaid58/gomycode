@@ -18,6 +18,8 @@ os.system('pip install SpeechRecognition')
 os.system('pip install nltk')
 
 import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 import streamlit as st
 import speech_recognition as sr
 import string
